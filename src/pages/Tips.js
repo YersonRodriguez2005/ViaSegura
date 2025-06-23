@@ -4,6 +4,18 @@ import { Lightbulb, ShieldCheck, AlertTriangle, Users, Heart, BookOpen, Info, Cl
 
 export default function Tips() {
     const [selectedCategory, setSelectedCategory] = useState('General');
+    const [copied, setCopied] = useState(false);
+
+    const handleCopyLink = () => {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+            })
+            .catch(() => {
+                setCopied(false);
+            });
+    };
 
     const tips = [
         {
@@ -319,10 +331,13 @@ export default function Tips() {
 
                 {/* CTA final */}
                 <div className="text-center mt-20">
-                    <div className="inline-flex items-center px-8 py-4 bg-black text-yellow-400 rounded-full font-bold text-lg shadow-xl hover:scale-110 transition transform duration-300 cursor-pointer">
+                    <button
+                        onClick={handleCopyLink}
+                        className="inline-flex items-center px-8 py-4 bg-black text-yellow-400 rounded-full font-bold text-lg shadow-xl hover:scale-110 transition-transform duration-300"
+                    >
                         <Users className="w-5 h-5 mr-3" />
-                        Comparte estos tips con otros
-                    </div>
+                        {copied ? '¡Enlace copiado!' : 'Comparte estos tips con otros'}
+                    </button>
                 </div>
             </div>
         </main>
