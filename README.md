@@ -107,7 +107,7 @@ Distribuido bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más de
 
 ## 👤 Autor
 
-**Yerson [Tu Nombre]**  
+**Yerson Rodriguez**  
 Desarrollador Full Stack MERN - apasionado por la seguridad vial.  
 🔗 [LinkedIn](https://linkedin.com) • 🌐 [Portafolio](https://tuweb.com) • 🐙 [GitHub](https://github.com/tu-usuario)
 
