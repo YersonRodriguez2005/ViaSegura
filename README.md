@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# 🚦 ViaSegura
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**ViaSegura** es una plataforma educativa interactiva construida con **React** que busca promover la **seguridad vial** en Colombia mediante contenido visual, evaluaciones, estadísticas y consejos prácticos. Su objetivo es fomentar una conducción más responsable y reducir los índices de siniestralidad en el país.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Funcionalidades
 
-### `npm start`
+### 📚 Teoría Vial
+- Explicación clara de normas de tránsito.
+- Diferenciación entre reglas para **motociclistas** y **conductores**.
+- Visualización de señales de tránsito.
+- Recomendaciones sobre documentos obligatorios.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🧠 Evaluaciones
+- Módulo interactivo con **preguntas aleatorias**.
+- Selección múltiple.
+- Sistema automático de calificación.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 💡 Tips de Conducción
+- Consejos categorizados: general, lluvia, motociclistas, ciudad, etc.
+- Tarjetas animadas con **iconografía representativa**.
+- Estilo profesional con énfasis visual.
 
-### `npm test`
+### 📊 Estadísticas Nacionales
+- Datos de muertes viales por año.
+- Indicadores por tipo de usuario.
+- Gráficas dinámicas con **Recharts**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧪 Tecnologías utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Herramienta         | Uso principal                         |
+|---------------------|----------------------------------------|
+| ⚛️ React            | Librería principal del frontend        |
+| 🧭 React Router     | Navegación entre páginas               |
+| 🎨 TailwindCSS      | Estilos modernos y utilitarios         |
+| 📊 Recharts         | Visualización de datos en gráficos     |
+| 🧱 Lucide React     | Iconografía moderna y adaptable        |
+| 🚀 Vite             | Compilación y desarrollo local rápido  |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Estructura del proyecto
 
-### `npm run eject`
+```
+src/
+├── assets/           # Imágenes e íconos
+├── components/       # Componentes reutilizables
+├── data/             # Preguntas, estadísticas y tips
+├── pages/            # Vistas principales (Tips, Teoría, Evaluaciones)
+├── App.js            # Rutas y estructura base
+├── index.css         # Tailwind y estilos globales
+└── main.jsx          # Punto de entrada React
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Instalación
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/tu-usuario/via-segura.git
+cd via-segura
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 2. Instala las dependencias
+npm install --legacy-peer-deps
 
-## Learn More
+# 3. Inicia el servidor de desarrollo
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🏗️ Build de producción
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🌐 Despliegue (Vercel)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm install -g vercel
+vercel
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📊 Datos destacados (2025)
 
-### Advanced Configuration
+- 🚧 +100.000 muertes viales en los últimos 15 años.
+- 🏍️ 60 % de fallecidos son motociclistas.
+- 🧑‍🤝‍🧑 44 % de víctimas fatales son jóvenes entre 15–35 años.
+- ⚖️ Solo 4 % de muertes llegan a juicio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📌 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Distribuido bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👤 Autor
+
+**Yerson [Tu Nombre]**  
+Desarrollador Full Stack MERN - apasionado por la seguridad vial.  
+🔗 [LinkedIn](https://linkedin.com) • 🌐 [Portafolio](https://tuweb.com) • 🐙 [GitHub](https://github.com/tu-usuario)
+
+---
+
+## 🙌 Agradecimientos
+
+- [ANSV Colombia](https://www.ansv.gov.co)
+- Comunidad de React y TailwindCSS
+- Fuentes abiertas de datos de tránsito en Colombia
